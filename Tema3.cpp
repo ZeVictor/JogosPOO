@@ -22,6 +22,7 @@ int main(int argc, char* args[])// função principal.
 	cin >> jog2; // Salva o nome digitado na variavel jog2.
 
 	//Usando o laço para determinar a hora de parar.(Usando a variavel boleana como condição)
+	//Usando o laço while pq não se sabe o número de vezes que ele vai rodar.
 	while (sair == false)
 	{
 
