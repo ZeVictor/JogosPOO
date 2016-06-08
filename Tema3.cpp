@@ -4,16 +4,16 @@
 #include <ctime>// Para poder usar o tempo como semente do gerador de numero
 using namespace std;
 
-void imprimir_espacos(int total1); //Identificando a função void criada.
+void imprimir_espacos(int total1); //Identificando a funÃ§Ã£o void criada.
 
-int main(int argc, char* args[])// função principal.
+int main(int argc, char* args[])// funÃ§Ã£o principal.
 {
 
-	bool sair = false; // Variavel do tipo boleana para usar na condição do while.
+	bool sair = false; // Variavel do tipo boleana para usar na condiÃ§Ã£o do while.
 
 	string jog1, jog2; //Variavel do tipo string para salvar os nomes dos jogadores, sem definir tamanho.
 					   
-	int total1 = 0, total2 = 0;//Variavel do tipo inteira para definir a quantidade de  espacos inicial de cada carrinho, e fazer à adição a cada rodada.
+	int total1 = 0, total2 = 0;//Variavel do tipo inteira para definir a quantidade de  espacos inicial de cada carrinho, e fazer Ã  adiÃ§Ã£o a cada rodada.
 
 	cout << "Digite o nome do primeiro piloto:" << endl; //Solicita que o primeiro jogador digite seu nome.
 	cin >> jog1; // Salva o nome digitado na variavel jog1.
@@ -21,7 +21,7 @@ int main(int argc, char* args[])// função principal.
 	cout << "Digite o nome do segundo piloto:" << endl; //Solicita que o segundo jogador digite seu nome.
 	cin >> jog2; // Salva o nome digitado na variavel jog2.
 
-	//Usando o laço para determinar a hora de parar.(Usando a variavel boleana como condição)
+	//Usando o laÃ§o para determinar a hora de parar.(Usando a variavel boleana como condiÃ§Ã£o)
 	while (sair == false)
 	{
 
@@ -29,7 +29,7 @@ int main(int argc, char* args[])// função principal.
 		// Variavel inteira para definir o tamanho da pista.
 		int total_espacos = 80;
 
-		//Fazendo o calculo para gerar um numero aleatório. (USA O TEMPO PARA GERAR ESSE NUMERO)
+		//Fazendo o calculo para gerar um numero aleatÃ³rio. (USA O TEMPO PARA GERAR ESSE NUMERO)
 		srand((int)time(0));
 
 		//Para o jogador 1: Gera um numero aleatorio para o total de espacos (Entre 1 e 3)
@@ -42,41 +42,41 @@ int main(int argc, char* args[])// função principal.
 
 		total2 = total2 + total_espacos;
 
-		//Imprimindo na tela a parte gráfica(desenho) dos carrinhos. Além, de mostrar o nome do jogador, o local de chegada, largada e o nome do jogo.
+		//Imprimindo na tela a parte grÃ¡fica(desenho) dos carrinhos. AlÃ©m, de mostrar o nome do jogador, o local de chegada, largada e o nome do jogo.
 
-		cout << "Pista de corrida do Zé:" << endl;
+		cout << "Pista de corrida do ZÃ©:" << endl;
 
 		cout << "LARGADA:                                                               CHEGADA:" << endl;
 
 		cout << "Piloto 1:" << jog1 << endl; // Usa o nome digitado no jog1 como nome do piloto 1.
-		imprimir_espacos(total1);//Usa o numero aleatorio gerado no Total1 para definir a qntd de espaços que devem ser impressos.
-		cout << "  _  " << endl;// 1º Parte do grafico do carrinho. (TETO)
-		imprimir_espacos(total1);//Usa o numero aleatorio gerado no Total1 para definir a qntd de espaços que devem ser impressos.
-		cout << "-o-o>" << endl;// 2º Parte do grafico do carrinho. (CORPO DO CARRO)
+		imprimir_espacos(total1);//Usa o numero aleatorio gerado no Total1 para definir a qntd de espaÃ§os que devem ser impressos.
+		cout << "  _  " << endl;// 1Âº Parte do grafico do carrinho. (TETO)
+		imprimir_espacos(total1);//Usa o numero aleatorio gerado no Total1 para definir a qntd de espaÃ§os que devem ser impressos.
+		cout << "-o-o>" << endl;// 2Âº Parte do grafico do carrinho. (CORPO DO CARRO)
 		cout << "_______________________________________________________________________________" << endl;//Imprimindo a pista 
 
 																										  
-		cout << "Valor que andou: " << total1 << endl;  //Total de espaços andando pelo carrinho 1
+		cout << "Valor que andou: " << total1 << endl;  //Total de espaÃ§os andando pelo carrinho 1
 
 
 		cout << "Piloto 2:" << jog2 << endl;// Usa o nome digitado no jog2 como nome do piloto 2.
-		imprimir_espacos(total2);//Usa o numero aleatorio gerado no Total2 para definir a qntd de espaços que devem ser impressos.
-		cout << "  _  " << endl;// 1º Parte do grafico do carrinho. (TETO)
-		imprimir_espacos(total2);//Usa o numero aleatorio gerado no Total2 para definir a qntd de espaços que devem ser impressos.
-		cout << "-o-o>" << endl;// 2º Parte do grafico do carrinho. (CORPO DO CARRO)
+		imprimir_espacos(total2);//Usa o numero aleatorio gerado no Total2 para definir a qntd de espaÃ§os que devem ser impressos.
+		cout << "  _  " << endl;// 1Âº Parte do grafico do carrinho. (TETO)
+		imprimir_espacos(total2);//Usa o numero aleatorio gerado no Total2 para definir a qntd de espaÃ§os que devem ser impressos.
+		cout << "-o-o>" << endl;// 2Âº Parte do grafico do carrinho. (CORPO DO CARRO)
 		cout << "_______________________________________________________________________________" << endl;//Imprimindo a pista 
 
 																										  
-		cout << "Valor que andou: " << total2 << endl;  //Total de espaços andando pelo carrinho 2
+		cout << "Valor que andou: " << total2 << endl;  //Total de espaÃ§os andando pelo carrinho 2
 
 		//Apaga tudo a cada rodada
 		system("cls");
 
 
-		//Se sair não limpa a tela.
-		if (total1 >= 80 || total2 >= 80)//Condição para fazer a condição do laço ficar falsa, e o jogo parar.
+		//Se sair nÃ£o limpa a tela.
+		if (total1 >= 80 || total2 >= 80)//CondiÃ§Ã£o para fazer a condiÃ§Ã£o do laÃ§o ficar falsa, e o jogo parar.
 		{
-			sair = true;//Muda a veracidade do laço
+			sair = true;//Muda a veracidade do laÃ§o
 
 		}
 
@@ -86,7 +86,7 @@ int main(int argc, char* args[])// função principal.
 
 	}
 
-	//Quando sair do laço mostra que o jogo acabou
+	//Quando sair do laÃ§o mostra que o jogo acabou
 	cout << "Fim de jogo!" << endl;
 
 	//Define qual jogador ganhou, ou se houve empate.
@@ -102,14 +102,14 @@ int main(int argc, char* args[])// função principal.
 
 
 
-void imprimir_espacos(int total) //Usando a função void como "Super poder".
+void imprimir_espacos(int total) //Usando a funÃ§Ã£o void como "Super poder".
 {
 
 
 
-	for (int qntd_espacos = 0; qntd_espacos < total; qntd_espacos++)// Laço for pq não sabe a hora que vai parar.
+	for (int qntd_espacos = 0; qntd_espacos < total; qntd_espacos++)// LaÃ§o for pq sabe a hora que vai parar.
 	{
-		cout << " ";// espaço que vai ser impresso, dependendo do numero aleatorio.
+		cout << " ";// espaÃ§o que vai ser impresso, dependendo do numero aleatorio.
 
 
 	}
