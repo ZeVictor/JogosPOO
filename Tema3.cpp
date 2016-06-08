@@ -22,7 +22,7 @@ int main(int argc, char* args[])// função principal.
 	cin >> jog2; // Salva o nome digitado na variavel jog2.
 
 	//Usando o laço para determinar a hora de parar.(Usando a variavel boleana como condição)
-	//Usando o laço while pq não se sabe o número de vezes que ele vai rodar.
+	//Usando o laço while pq não se sabe o número de vezes que ele vai repetir.
 	while (sair == false)
 	{
 
@@ -108,7 +108,7 @@ void imprimir_espacos(int total) //Usando a função void como "Super poder".
 
 
 
-	for (int qntd_espacos = 0; qntd_espacos < total; qntd_espacos++)// Laço for pq sabe a hora que vai parar.
+	for (int qntd_espacos = 0; qntd_espacos < total; qntd_espacos++)// Laço for pq sabe quantas vezes ele vai repetir..
 	{
 		cout << " ";// espaço que vai ser impresso, dependendo do numero aleatorio.
 
