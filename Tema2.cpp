@@ -3,10 +3,10 @@
 #include <ctime>//Para poder usar o tempo como "semente" do gerador.
 
 using namespace std;
-//Fuñção principal.
+//FuÃ±Ã§Ã£o principal.
 int main(int argc, char* args[])
 {
-	bool sair = false; //Variavel logica para usar na condição do laço.
+	bool sair = false; //Variavel logica para usar na condiÃ§Ã£o do laÃ§o.
 	string jog1, jog2; //Variavel para salvar o nome dos jogadores.
 	int vida1 = 20, vida2 = 20; //Define a vida inicial do jogador.
 	int A = 4, D = 2; //Define ataque e defesa dos jogadores.
@@ -35,47 +35,47 @@ int main(int argc, char* args[])
 
 		//Adiciona uma "semente" ao gerador de numeros (TEMPO).
 		srand((int)time(0));
-		//Gera um número aletorio.
+		//Gera um nÃºmero aletorio.
 		dado6 = rand() % 6 + 1;
 
-		//Se o número for maior que quatro (4), executa os comandos dentro dos paramêtros do if.
+		//Se o nÃºmero for maior que quatro (4), executa os comandos dentro dos paramÃªtros do if.
 		if (dado6 > 4)
 		{
-			vida1 = vida1 - dado6; // Subtrai o número gerado da vida do jogador.
+			vida1 = vida1 - dado6; // Subtrai o nÃºmero gerado da vida do jogador.
 			cout << jog1 << "Dano:" << -dado6 << endl; // Mostra o dano gerado na vida do jogador.
 			cout << jog2 << "Acertou!" << endl;// Mostra que o jogador acertou.
-			cout << "Proxima jogada (Digite enter):" << endl;// Solicita que  jogador digite enter para ir para à próxima jogada.
-			cin.get();//Dá uma pausa até o jogador digitar enter e pular para próxima jogada.
+			cout << "Proxima jogada (Digite enter):" << endl;// Solicita que  jogador digite enter para ir para Ã  prÃ³xima jogada.
+			cin.get();//DÃ¡ uma pausa atÃ© o jogador digitar enter e pular para prÃ³xima jogada.
 		}
-		//Se for maior ou igual a quatro (4) executa isso que está nos paramêtros do else if.
+		//Se for maior ou igual a quatro (4) executa isso que estÃ¡ nos paramÃªtros do else if.
 		else if (dado6 <= 4)
 		{
 
 			cout << jog2 << "Errou!" << endl; //Mostra que o jogador errou
-			cout << "Proxima jogada (Digite enter):" << endl;// Solicita que  jogador digite enter para ir para à próxima jogada.
-			cin.get();//Dá uma pausa até o jogador digitar enter e pular para próxima jogada.
+			cout << "Proxima jogada (Digite enter):" << endl;// Solicita que  jogador digite enter para ir para Ã  prÃ³xima jogada.
+			cin.get();//DÃ¡ uma pausa atÃ© o jogador digitar enter e pular para prÃ³xima jogada.
 
 		}
 		//Mesma coisa para o jogador 2
 		dado6 = rand() % 6 + 1;
 
-		//Se o número for maior que quatro (4), executa os comandos dentro dos paramêtros do if.
+		//Se o nÃºmero for maior que quatro (4), executa os comandos dentro dos paramÃªtros do if.
 		if (dado6 > 4)
 		{
 
-			vida2 = vida2 - dado6; // Subtrai o número gerado da vida do jogador.
+			vida2 = vida2 - dado6; // Subtrai o nÃºmero gerado da vida do jogador.
 			cout << jog2 << "Dano:" << -dado6 << endl;// Mostra o dano gerado na vida do jogador.
 			cout << jog1 << "Acertou!" << endl;//Mostra que o jogador acertou.
-			cout << "Proxima jogada (Digite enter):" << endl; // Solicita que  jogador digite enter para ir para à próxima jogada.
-			cin.get();//Dá uma pausa até o jogador digitar enter e pular para próxima jogada.
+			cout << "Proxima jogada (Digite enter):" << endl; // Solicita que  jogador digite enter para ir para Ã  prÃ³xima jogada.
+			cin.get();//DÃ¡ uma pausa atÃ© o jogador digitar enter e pular para prÃ³xima jogada.
 		}
 
-		//Se for maior ou igual a quatro (4) executa isso que está nos paramêtros do else if.
+		//Se for menor ou igual a quatro (4) executa isso que estÃ¡ nos paramÃªtros do else if.
 		else if (dado6 <= 4) {
 
 			cout << jog1 << "Errou!" << endl; //Mostra que o jogador errou
-			cout << "Proxima jogada (Digite enter):" << endl; // Solicita que  jogador digite enter para ir para à próxima jogada.
-			cin.get();//Dá uma pausa até o jogador digitar enter e pular para próxima jogada.
+			cout << "Proxima jogada (Digite enter):" << endl; // Solicita que  jogador digite enter para ir para Ã  prÃ³xima jogada.
+			cin.get();//DÃ¡ uma pausa atÃ© o jogador digitar enter e pular para prÃ³xima jogada.
 
 		}
 
@@ -83,7 +83,7 @@ int main(int argc, char* args[])
 
 		system("cls"); //Limpa a tela ao final de cada rodada.
 
-		// se sair não limpa a tela
+		// se sair nÃ£o limpa a tela
 		if (vida1 <= 0 || vida2 <= 0)
 		{
 
