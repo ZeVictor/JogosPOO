@@ -4,7 +4,7 @@
 #include <ctime>// Para poder usar o tempo como semente do gerador de numero
 using namespace std;
 
-void imprimir_espacos(int total1); //Identificando a função void criada.
+void imprimir_espacos(int total); //Identificando a função void criada.
 
 int main(int argc, char* args[])// função principal.
 {
